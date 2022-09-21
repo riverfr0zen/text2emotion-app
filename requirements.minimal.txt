@@ -1,0 +1,11 @@
+#
+# These were added via poetry in my project. Just here for reference.
+#
+# The versions below are what I am using successfully circa 2022-09. Only 
+# the `emot` version seemed necessary to keep at 2.1, per the original 
+# requirements file.
+#
+nltk==3.7
+emoji==2.1.0
+pandas==1.5.0
+emot==2.1
