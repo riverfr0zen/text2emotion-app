@@ -10,9 +10,9 @@ from nltk.stem import WordNetLemmatizer
 import emoji
 from emot.emo_unicode import UNICODE_EMO, EMOTICONS
 
-nltk.download("stopwords")
-nltk.download("punkt")
-nltk.download("wordnet")
+# nltk.download("stopwords")
+# nltk.download("punkt")
+# nltk.download("wordnet")
 
 
 DATA_PATH = os.path.dirname(os.path.realpath(__file__))
@@ -381,7 +381,7 @@ def get_emotion(input):
                     emotions[df["Emotion"][a]] += 1
             except:
                 pass
-        if sum(emotions.values()) is 0:
+        if sum(emotions.values()) == 0:
             return emotions
         for i in emotions:
             emotion_values.append(round((emotions[i] / sum(emotions.values())), 2))
