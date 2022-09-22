@@ -10,6 +10,10 @@ from nltk.stem import WordNetLemmatizer
 import emoji
 from emot.emo_unicode import UNICODE_EMO, EMOTICONS
 
+#
+# Don't want to handshake for these every time. This data should
+# be downloaded separately.
+#
 # nltk.download("stopwords")
 # nltk.download("punkt")
 # nltk.download("wordnet")
